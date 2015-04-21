@@ -41,7 +41,7 @@ public class SecanteMethod {
 
             i++;
 
-            System.out.println("Iteração: " + i + "; xx = " + xx + "; Erro = " + erro);
+            System.out.println("Iteracao: " + i + "; xx = " + xx + "; Erro = " + erro);
 
         }
     }

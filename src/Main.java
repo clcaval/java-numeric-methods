@@ -54,8 +54,7 @@ public class Main {
        
        
        //*********************************************************************************
-       /*
-        * 
+              
         
        SecanteMethod s = new SecanteMethod();
        System.out.println("--------------------METODO DA SECANTE:------------------");
@@ -94,8 +93,7 @@ public class Main {
        s.secante(4.5, 3);
        System.out.println("********************PARA x0 = 5");
        s.secante(5, 3);
-	   */
-	   
+	   	   
 	   /* Jacobi Gauss */
 	   /*
 	   	double[][] matrizA = new double[n][n];
