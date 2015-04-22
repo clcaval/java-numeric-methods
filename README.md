@@ -6,4 +6,4 @@ some numeric methods written in java
 3. jacobi-gauss;
 4. machine error.
 
-todo: add some more
+todo: add some more (bisection method, false position, interpolation)
