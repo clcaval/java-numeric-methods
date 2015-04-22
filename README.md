@@ -1,9 +1,12 @@
-# java-numeric-methods
-some numeric methods written in java
+# Java Numeric Methods
 
-1. newton's method;
-2. secant method;
-3. jacobi-gauss;
-4. machine error.
+* [Newton's method](http://en.wikipedia.org/wiki/Newton%27s_method);
+* [Secant method](http://en.wikipedia.org/wiki/Secant_method)
+* [Jacobi-Gauss](http://en.wikipedia.org/wiki/Jacobi_method)
+* [Machine error](http://en.wikipedia.org/wiki/Machine_epsilon)
 
-todo: add some more (bisection method, false position, interpolation)
+#TODO:
+  * bisection method;
+  * false position;
+  * interpolation.
+  * rewrite everything in Python.
