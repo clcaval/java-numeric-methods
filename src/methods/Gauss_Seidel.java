@@ -1,5 +1,7 @@
 package methods;
 
+import helpers.Criterios;
+
 public class Gauss_Seidel {
 
 	public Gauss_Seidel(){}

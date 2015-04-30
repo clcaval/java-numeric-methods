@@ -1,4 +1,6 @@
-package methods;
+package newthons_method;
+
+import helpers.Functions;
 
 public class NewtonsMethod {
 
@@ -9,9 +11,9 @@ public class NewtonsMethod {
     public double whichExercise(double x, double xv, int exerc){
         switch(exerc){
             case 1:
-                return xv - (f.f1(xv)/f.f1Deriv(xv));
+                return xv - (f.f1(xv)/f.f1Deriv(xv));                
             case 2:
-                return xv - (f.f2(xv)/f.f2Deriv(xv));
+                return xv - (f.f2(xv)/f.f2Deriv(xv));                
             case 3:
                 return xv - (f.f3(xv)/f.f3Deriv(xv));
             default:

@@ -1,4 +1,6 @@
-package methods;
+package secant_method;
+
+import helpers.Functions;
 
 public class SecanteMethod {
 

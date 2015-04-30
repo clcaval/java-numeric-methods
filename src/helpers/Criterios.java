@@ -1,4 +1,4 @@
-package methods;
+package helpers;
 
 public class Criterios {
 	

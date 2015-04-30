@@ -1,8 +1,9 @@
-import methods.Criterios;
+import secant_method.SecanteMethod;
+import newthons_method.NewtonsMethod;
+import helpers.Criterios;
 import methods.Gauss_Seidel;
 import methods.Jacobi;
-import methods.NewtonsMethod;
-import methods.SecanteMethod;
+import gregory_series.*;
 
 public class Main {
 	
@@ -12,6 +13,30 @@ public class Main {
 	
     public static void main(String[] args) {
 
+    	GregorySerie g = new GregorySerie(10000);
+        
+    	double t = System.currentTimeMillis();
+        double gregory = g.calculateGregorySerie();
+        double s = System.currentTimeMillis();
+        double ts = (s-t)/1000;
+        System.out.println("tempo em seg: " + ts);
+
+        System.out.println("ABS erro: " + Math.abs(Math.PI - gregory));
+         
+         
+
+        //MacLaurin ml = new MacLaurin();
+        //System.out.println(ml.calculateMacLaurin(0.2, 0.00418410041841));
+        
+
+        DaseFormula d = new DaseFormula();
+        System.out.println(d.calculateDaseFormula(4,0.5,0.2,0.125));
+  
+
+         ArcsenDevelop a = new ArcsenDevelop(4,0,1);
+         System.out.println(a.calculateArcsen());
+         
+    		/*
        NewtonsMethod f = new NewtonsMethod();
              
        System.out.println("--------------------METODO DE NEWTON:------------------");
@@ -55,7 +80,7 @@ public class Main {
        
        //*********************************************************************************
               
-        
+        /*
        SecanteMethod s = new SecanteMethod();
        System.out.println("--------------------METODO DA SECANTE:------------------");
        System.out.println("--------------------PRIMEIRO EXERCICIO:----------------");
@@ -94,6 +119,8 @@ public class Main {
        System.out.println("********************PARA x0 = 5");
        s.secante(5, 3);
 	   	   
+	   	   
+	   	   */
 	   /* Jacobi Gauss */
 	   /*
 	   	double[][] matrizA = new double[n][n];
