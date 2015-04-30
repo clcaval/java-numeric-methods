@@ -13,30 +13,28 @@ public class Main {
 	
     public static void main(String[] args) {
 
-    	GregorySerie g = new GregorySerie(10000);
+    	GregorySerie g = new GregorySerie(10000000);
         
     	double t = System.currentTimeMillis();
         double gregory = g.calculateGregorySerie();
         double s = System.currentTimeMillis();
         double ts = (s-t)/1000;
-        System.out.println("tempo em seg: " + ts);
-
+        System.out.println("n = " + n + " -> tempo em seg: " + ts);
         System.out.println("ABS erro: " + Math.abs(Math.PI - gregory));
-         
-         
-
+                  
+        
         //MacLaurin ml = new MacLaurin();
         //System.out.println(ml.calculateMacLaurin(0.2, 0.00418410041841));
         
 
-        DaseFormula d = new DaseFormula();
-        System.out.println(d.calculateDaseFormula(4,0.5,0.2,0.125));
+        //DaseFormula d = new DaseFormula();
+        //System.out.println(d.calculateDaseFormula(4,0.5,0.2,0.125));
   
 
-         ArcsenDevelop a = new ArcsenDevelop(4,0,1);
-         System.out.println(a.calculateArcsen());
+        // ArcsenDevelop a = new ArcsenDevelop(4,0,1);
+        // System.out.println(a.calculateArcsen());
          
-    		/*
+    /*
        NewtonsMethod f = new NewtonsMethod();
              
        System.out.println("--------------------METODO DE NEWTON:------------------");

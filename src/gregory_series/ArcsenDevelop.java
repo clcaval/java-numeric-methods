@@ -25,6 +25,7 @@ private int n;
     public double calculateArcsen(){
         
     	double first = 0;
+        double second = 0;
         double sum = 0;
         
         for(int i = 0; i <= n; i++){
